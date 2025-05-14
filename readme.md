@@ -22,7 +22,7 @@ Most of the work is done under the two `Actions` these are what the commands cal
 This is setup to only work with UK Vat (inc or exc), but you should be able to work out how to change it for your own needs.
 
 ##  Debugging
-This plugin has the Symfony Debugger built in, so you can use the `debug()` function to output data to the console and use dd(). These are scattered around the code, in areas where we dont have plans that match skus. So when its running you should get meaningful output.
+This plugin has the Symfony Debugger built in, so you can use the `dump()` function to output data to the console and use `dd()`. These are scattered around the code, in areas where we dont have plans that match skus. So when its running you should get meaningful output.
 
 ## Notes
 The ChargeBee SDK is bundled in here, it was added in April 2025, so please check the version and update if needed.

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../../vendor/squizlabs/php_codesniffer/phpcs.xsd">
+	<!-- Extend the MEMBERS ruleset. -->
+	<rule ref="vendor/a8cteam51/team51-configs/quality-assurance/phpcs.dist.xml" />
+
+	<!-- Check that the proper text domain(s) is used everywhere. -->
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="t51-chargebee-to-wp-impoter" /> <!-- Change this value to your
+				plugin slug. -->
+			</property>
+		</properties>
+	</rule>
+	<!-- Include the WordPress Coding Standards -->
+	<rule ref="WordPress">
+		<exclude name="WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase" />
+	</rule>
+
+	<!-- Check that the proper prefix is used everywhere. -->
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="T51_ChargBee_to_WP_Importer" /> <!-- Change this value to your
+				plugin prefix. -->
+				<element value="members_importer" /> <!-- Change this value to your plugin prefix. -->
+			</property>
+		</properties>
+	</rule>
+
+	<!-- Add any other custom rules here. -->
+</ruleset>

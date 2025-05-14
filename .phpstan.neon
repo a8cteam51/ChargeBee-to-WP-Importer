@@ -1,0 +1,13 @@
+includes:
+    - %currentWorkingDirectory%/vendor/a8cteam51/team51-configs/quality-assurance/phpstan.dist.neon
+
+parameters:
+    scanDirectories:
+        - %currentWorkingDirectory%/plugins
+    paths:
+        - %currentWorkingDirectory%/mu-plugins/chargebee-to-wp-importer
+    WPCompat:
+        pluginFile: %currentWorkingDirectory%/mu-plugins/chargebee-to-wp-importer/chargebee-to-wp-importer.php
+    excludePaths:
+        analyse:
+        	- %currentWorkingDirectory%/mu-plugins/chargebee-to-wp-importer/chargebee/*

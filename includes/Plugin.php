@@ -33,8 +33,8 @@ class Plugin {
 	public static function init(): void {
 
 		// Load the autoloader in parent wp-dir.
-		$dir = dirname( __DIR__, 3 );
-		require_once $dir . '/vendor/autoload.php';
+		// $dir = dirname( __DIR__, 3 );
+		// require_once $dir . '/vendor/autoload.php';
 
 		\ChargeBee\ChargeBee\Environment::configure(
 			t51_chargbee_to_wp_importer_get_config( 'membership_id' ),

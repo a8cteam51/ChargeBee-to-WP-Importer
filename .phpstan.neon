@@ -3,11 +3,11 @@ includes:
 
 parameters:
     scanDirectories:
-        - %currentWorkingDirectory%/plugins
+        - %currentWorkingDirectory%/includes
     paths:
-        - %currentWorkingDirectory%/mu-plugins/chargebee-to-wp-importer
+        - %currentWorkingDirectory%/includes
     WPCompat:
-        pluginFile: %currentWorkingDirectory%/mu-plugins/chargebee-to-wp-importer/chargebee-to-wp-importer.php
+        pluginFile: %currentWorkingDirectory%/chargebee-to-wp-importer.php
     excludePaths:
         analyse:
-        	- %currentWorkingDirectory%/mu-plugins/chargebee-to-wp-importer/chargebee/*
+        	- %currentWorkingDirectory%/chargebee/*

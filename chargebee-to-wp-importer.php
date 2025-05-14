@@ -32,7 +32,7 @@ define( 'T51_CHARGEBEE_TO_WPPATH', plugin_dir_path( __FILE__ ) );
 define( 'T51_CHARGEBEE_TO_WPURL', plugin_dir_url( __FILE__ ) );
 
 add_action(
-	'plugins_loaded',
+	'init',
 	function () {
 		// Load all functions.
 		require_once T51_CHARGEBEE_TO_WPPATH . '/functions.php';

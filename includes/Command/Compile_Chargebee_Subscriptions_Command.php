@@ -49,6 +49,7 @@ class Compile_Chargebee_Subscriptions_Command {
 			'delay'     => $assoc_args['delay'] ?? $defualt['delay'],
 		);
 
+
 		// Create an instance of the Subscription_Compiler class.
 		$compiler = new Compile_ChargeBee_Data( esc_attr( $args['file_name'] ) . '.csv' );
 
